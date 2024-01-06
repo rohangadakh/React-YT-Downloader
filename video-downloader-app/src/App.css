@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Serif Display', serif;
+  background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLJhRl1uIdooRkfouYzUUSRfFir7EMzSTTMZ1HHo6IaBTiA7DN5C1mkTLSFEtt9u8gU1L2tdFBZNv-riZq_ALA91IZVTKolIFx3a5-cOs18P3rJDDLtEUSSimppHiToQYHnUbFNgiZ9MkmvqwJxpj3fS6jUdF0ZcIe-HnjVoBdv-aXxtl-L8rG8tPMFO8/s1600/2-1.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  overflow: hidden; /* Disable scrolling */
+}
+
+.navbar {
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  font-family: 'DM Serif Display', serif;
+  top: 0;
+  font-family: 'DM Serif Display', serif;
+  left: 0;
+  margin: 40px;
+  width: 96%;
+  background: rgba(255, 255, 255, 0.2); /* Glassmorphism background color */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 20px 20px 20px 20px; /* Add rounded corners to the bottom */
+}
+
+.logo {
+  width: 80px; /* Adjust the width of the logo as needed */
+  margin-right: 20px; /* Add margin to the right of the logo */
+  margin-left: 20px; /* Add margin to the right of the logo */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 80px;
+}
+
+.neon-textbox {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2); /* Glassmorphism background color */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  color: #fff;
+  font-family: 'DM Serif Display', serif;
+  box-shadow: 0 0 2000px rgba(150, 0, 255, 20);
+  border-radius: 15px;
+  width: 50%;
+  margin-right: 10px; /* Add margin to the right of the textbox */
+  transition: border-color 0.3s ease; /* Add transition for the border color */
+}
+
+.neon-textbox.error {
+  border: 2px solid #ff5555; /* Change border color for error state */
+}
+
+.neon-textbox:focus {
+  border: 2px solid #fff; /* Add white border on focus */
+}
+
+.option-buttons {
+  display: flex;
+  margin-top: 10px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.option-button {
+  padding: 15px 30px;
+  font-size: 22px;
+  border: none;
+  font-family: 'DM Serif Display', serif;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.option-button.selected {
+  padding: 15px 30px;
+  font-size: 22px;
+  border: none;
+  font-family: 'DM Serif Display', serif;
+  outline: none;
+  background: rgba(20, 4, 27, 0.2);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button {
+  margin-top: 15px;
+  padding: 15px 30px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: #ff0000;
+  color: #fff;
+  font-family: 'DM Serif Display', serif;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #cc0000;
+}
+
+.error-message {
+  color: #fffefe;
+  font-size: 18px;
+  margin-top: 18px;
+}
